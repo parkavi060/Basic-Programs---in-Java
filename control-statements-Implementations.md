@@ -91,7 +91,7 @@ public class Main
 }
 ````
 
-##.Find Grade Using Switch Case - Find grades based on marks. 
+##6.Find Grade Using Switch Case - Find grades based on marks. 
 
 ````java[]
 import java.util.*;
@@ -135,4 +135,29 @@ public class Main
 	}
 }
 
+````
+
+##7.Prime number program
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter number:");
+	int num=scan.nextInt();
+	 if(num<=1){
+	     System.out.println("Not a prime number");
+	 }
+	 boolean isPrime=true;
+	 for(int i=2;i<=num/2;i++){
+	     if(num%i==0) {
+	         isPrime=false;
+	         break;
+	     }
+	 }
+	 if(isPrime) System.out.println("The number is prime");
+	 else System.out.println("The number is not prime");
+}
+}
 ````
