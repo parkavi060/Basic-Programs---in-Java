@@ -161,3 +161,26 @@ public class Main
 }
 }
 ````
+
+##8.Palindrome Program
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter number:");
+	int num=scan.nextInt();
+	int rem;
+	int s=0;
+	int originalNumber=num;
+	while(num!=0){
+	    rem=num%10;
+	    s=s*10+rem;
+	    num/=10;
+	}
+	if(s==originalNumber) System.out.println("It is a Palindreome");
+	else System.out.println("It is not palindreome");
+}
+}
+````
