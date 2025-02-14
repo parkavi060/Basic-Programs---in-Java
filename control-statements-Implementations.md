@@ -262,3 +262,28 @@ public class Main{
     
 }
 ````
+##13.Perfect number
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int num=28;
+	    int sum=0;
+	    System.out.println("The factors are");
+	    for(int i=1;i<num;i++){
+	        if(num%i==0){
+	            System.out.print(i+" ");
+	            sum+=i;
+	        }
+	    }
+	    System.out.println();
+	    System.out.println("The sum is"+sum);
+	    if(sum==num) System.out.println("Answer: It is a prefect number");
+	    else System.out.println("Answer: It is not a perfect number");
+	   
+		
+	}
+}
+
+````
