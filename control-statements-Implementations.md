@@ -220,3 +220,24 @@ public class Main
 }
 }
 ````
+
+##11.Find maximum difference between the numbers in an array..
+````java[]
+import java.util.*;
+public class Main
+{
+    public static int maxDifference(int [] arr){
+        int maxdiff=0;
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=i+1;j<arr.length;j++){
+                maxdiff=Math.max(maxdiff,arr[j]-arr[i]);
+            }
+        }
+        return maxdiff;
+    }
+	public static void main(String[] args) {
+		int arr[]={2,15,67,8,3,9,45,0};
+		System.out.println(maxDifference(arr));
+	}
+}
+````
