@@ -1,4 +1,4 @@
-## 01.Simple If Statement - Check if a number is positive, 02.Check if the number is positive or negative.
+## 01.Simple If Statement - Check if a number is positive, 02.Check if the number is positive or negative,14.Check Positive or Negative Number Using Nested If - Nested condition check for positive or negative. 
 ````java[]
 import java.util.*;
 
@@ -89,4 +89,50 @@ public class Main
 
 	}
 }
+````
+
+##.Find Grade Using Switch Case - Find grades based on marks. 
+
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the mark:");
+		int mark=scan.nextInt();
+		if(mark<0||mark>100){
+		    System.out.println("Invalid mark");
+		}
+		else{
+		    switch(mark/10){
+		       case 10:
+		            System.out.println("Grade:O");
+		            break;
+		      case 9:
+		            System.out.println("Grade:O");
+		            break;
+		      case 8:
+		            System.out.println("Grade:A+");
+		            break;
+		      case 7:
+		            System.out.println("Grade:A");
+		            break;
+		      case 6:
+		            System.out.println("Grade:B+");
+		            break;
+		      case 5:
+		            System.out.println("Grade:B");
+		            break;
+		      case 4:
+		            System.out.println("Grade:C");
+		            break;
+		      case 3:
+		            System.out.println("Grade:F(Fail)");
+		            break;
+		    }
+		}
+	}
+}
+
 ````
