@@ -184,3 +184,20 @@ public class Main
 }
 }
 ````
+
+##9.To check if it is a vowel or not.
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter a character:");
+	char c=Character.toLowerCase(scan.next().charAt(0));
+	if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
+	    System.out.println("The charecter is a vowel");
+	}
+	else System.out.println("The charecter is consonent");
+}
+}
+````
