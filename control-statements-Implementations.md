@@ -241,3 +241,24 @@ public class Main
 	}
 }
 ````
+
+##12.left rotate the string
+````java[]
+import java.util.*;
+public class Main{
+    public static void main(String []args){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter the string");
+        String str=scan.nextLine();
+        System.out.println("Enter the no. rotations");
+        int k=scan.nextInt();
+        System.out.println(leftRotate(str,k));
+    }
+    public static String leftRotate(String str,int k){
+        int n=str.length();
+        k%=n;
+        return str.substring(k)+str.substring(0,k);
+    }
+    
+}
+````
