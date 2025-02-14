@@ -287,3 +287,22 @@ public class Main
 }
 
 ````
+
+##14.Factorial recursion..
+````java[]
+import java.util.*;
+public class Main
+{
+    public static int factorial(int num){
+        if(num==0||num==1) return 1;
+        return num*factorial(num-1);
+    }
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    System.out.println("Enter the number:");
+	    int num=scan.nextInt();
+	    System.out.println("The factorial "+num+" is "+factorial(num));
+
+	}
+}
+````
