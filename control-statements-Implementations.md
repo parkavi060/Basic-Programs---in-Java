@@ -201,3 +201,22 @@ public class Main
 }
 }
 ````
+##10.To check if a String is palindrome or not..
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter a string:");
+	String str=scan.nextLine();
+	String reverse="";
+	for(int i=str.length()-1;i>=0;i--){
+	    reverse+=str.charAt(i);
+	}
+	if(str.equals(reverse)) System.out.println("Palindrome string");
+	else System.out.println("Not a Palindrome String");
+
+}
+}
+````
