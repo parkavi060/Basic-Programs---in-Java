@@ -306,3 +306,25 @@ public class Main
 	}
 }
 ````
+
+###15.Print Odd factors of a number
+
+````java[]
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n=10;
+		System.out.print("The odd factors of a "+n+" is:");
+		for(int i=1;i<=n;i++){
+		    if(n%i==0) 
+		    {
+		        if(i%2==1) {
+		            
+		            System.out.print(i+ " ");
+		}
+	}
+ }
+	}
+}
+````
